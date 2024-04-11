@@ -11,3 +11,7 @@ img{
     width: 300px;
     height: auto;
 }
+
+div{
+    border: 1px solid black;
+}
