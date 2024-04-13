@@ -8,7 +8,9 @@ html{
 }
 
 body{
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 img{
@@ -16,10 +18,36 @@ img{
     height: auto;
 }
 
-header, section, div, footer, nav{
+/* header, section, div, footer, nav{
     border: 1px solid black;
     margin: 4px;
     padding: 3px;
+} */
+
+header{
+    position: relative;
+    background: url(imgs/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 0;
+    padding-bottom: 100px;
+    padding-top: 130px;
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #4776E6;
+    z-index: -1;
+    opacity: 0.8;
+    background-image: linear-gradient(to left, rgba(37, 92, 253, 0.85),
+                    rgba(59, 70, 236, 0.85), rgba(87, 64, 202, 0.85),
+                    rgba(108, 60, 187, 0.85), rgba(115, 0, 189, 0.85));
 }
 
 .res-container{
@@ -36,13 +64,56 @@ nav{
     left: 0;
     right: 0;
     top: 0;
+    z-index: 2;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
 }
 
 nav ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul>li:nth-of-type(1){
     flex-grow: 0.6;
+    padding: .3125rem 0;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+nav ul>li:not(:nth-of-type(1)){
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home>div{
+    flex-basis: 44%;
+}
+
+#home>img{
+    flex-basis: 37%;
+    margin-right: 5%;
+    position: relative;
+    z-index: 1;
+}
+
+#svg-shape{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 0;
 }
