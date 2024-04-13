@@ -7,11 +7,42 @@ html{
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Raleway", sans-serif;
+}
+
 img{
     width: 300px;
     height: auto;
 }
 
-div{
+header, section, div, footer, nav{
     border: 1px solid black;
+    margin: 4px;
+    padding: 3px;
+}
+
+.res-container{
+    width: 80vw;
+    margin: 0 auto 0 auto;
+}
+
+li{
+    list-style:none;
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul>li:nth-of-type(1){
+    flex-grow: 0.6;
 }
