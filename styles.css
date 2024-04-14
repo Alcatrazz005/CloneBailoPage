@@ -4,100 +4,283 @@
     font-family: raleway, sans-serif;
 }
 
-html {
-    box-sizing: border-box;
+.res-container{
+    max-width: 80vw;
+    margin: auto;
 }
 
-img {
-    width: 300px;
-    height: auto;
-}
-
-
-
-/* header,
-section,
-div,
-footer,
-nav {
-    border: 1px solid black;
-    margin: 4px;
-    padding: 3px;
-} */
-
-nav li {
+.res-container>nav>ul {
     list-style: none;
-
-}
-
-nav ul {
     display: flex;
-    justify-content: center;
-    padding-top: 1em;
-    
+
 }
 
-nav ul>li:nth-of-type(1) {
-    flex-grow: 0.4;
+.res-container>nav>ul>li:nth-of-type(1) {
+    flex-grow: 1;
     font-size: 20px;
-    font-weight: bold;
-color: white;
-
+    font-weight: 700;
 }
 
-nav ul>li:not(:nth-of-type(1)) {
-    margin: 0 5px;
+.res-container>nav>ul>li:not(:nth-of-type(1)) {
+    margin: auto 1em;
     font-size: 10px;
-    padding: 10px 10px;
-color:white
+    font-weight: 600;
 }
 
-nav {
-    margin-bottom: 50px;
+.res-container nav {
+    padding-top: 1em;
 }
 
 .tagline {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    color: white;
-    width: 75vw;
-    margin:auto;
 }
 
-.tagline>div:nth-of-type(1) {
-    width: 456px;
-}
-
-.tagline>div p {
-    width: 500px;
+.tagline>img:nth-of-type(1) {
+    height: 24em;
+    position: relative;
+    z-index: 2;
 }
 
 header {
-    background: url(imgs/banner-bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(imgs/banner-bg.jpg);
     position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-size: no repeat;
     z-index: 0;
+    color: white;
 }
 
 header::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: #4776E6;
+    top: 0;
+    left: 0;
     opacity: 0.8;
     z-index: -1;
+    background: #4776E6;
     background-image: linear-gradient(to left, rgba(37, 92, 253, 0.85), rgba(59, 70, 236, 0.85), rgba(87, 64, 202, 0.85), rgba(108, 60, 187, 0.85), rgba(115, 0, 189, 0.85));
+}
+section{
+    max-width: 80vw;
+    margin: auto;
+}
 
-}
-.bottomwave{
+.bottomwave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    z-index: 1;
     width: 100%;
+    margin: 0 auto;
 }
-.tagline *{
-    margin: 0.6em 0;
+.tagline>div:nth-of-type(1)
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
+.tagline>div>*{
+    margin: 0.5em 0;
+}
+.tagline>div>button{
+    padding: 0.6em;
+    border-radius: 2em;
+    font-size: 0.7em;
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.section1>div>img{
+    width: 25em;
+}
+.section1>div:nth-of-type(2)
+{
+    margin-top: 1em;
+}
+.section1>div:nth-of-type(2)  *
+{
+   margin-top: 0.7em;
+   margin-bottom: 0.7em;
+}
+.small-title{
+    color: #13c3c9;
+}
+.section1>div:nth-of-type(2)>p{
+    font-size: 0.7em;
+}
+.section1>div:nth-of-type(2) .select-color{
+    font-size: 0.7em;
+    color: #86939E
+}
+.item-price{
+    font-size: 0.7em;
+    color: #86939E;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price span del{
+    color: #FF9800;
+    font-weight: 700;
+    border-right: 0.5em;
+}
+.price span{
+    color: #13c3c9;
+    font-weight: 700;
+   
+}
+.price span button{
+    padding: 0.5em 0.8em;
+    background-color:#13c3c9;
+    border-radius: 5em;
+    color: white;
+    border: none;
+    font-size: 0.8em;
+}
+.configuration{
+ text-decoration: none;
+ font-size: 0.4em;
+}
+
+.section3{
+    background-image: url(imgs/banner-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+   max-width: 100vw;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+.section3::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1;
+    background: #4776E6;
+    background-image: linear-gradient(to left, rgba(37, 92, 253, 0.85), rgba(59, 70, 236, 0.85), rgba(87, 64, 202, 0.85), rgba(108, 60, 187, 0.85), rgba(115, 0, 189, 0.85));
+}
+.section3>div>div>*{
+    text-align: center;
+    color: white;
+    width: 50vw;
+    margin: auto;
+}
+.section3 div:nth-of-type(2)>a{
+    display: block;
+    text-align: center;
+   
+}
+.section3 div:nth-of-type(2)>a>i{
+ height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.features>div
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.section2>h6 {
+    text-align: center;
+    color: #13c3c9;
+}
+.section2>h3 {
+    text-align: center;
+    max-width: 30vw;
+    margin: auto;
+    margin-top: 1em;
+    font-weight: 700;
+}
+.features>div>div{
+
+padding: 2em;
+}
+.features>div>div>*{
+text-align: center;
+padding: 0.4em;
+    }
+    .features>div>div>p{
+      font-size: 0.6em;
+            }
+            .features>div:first-child{
+margin-top: 2em;
+            }
+            .section2{
+                margin-top: 5em;
+            }
+            .section4>div:first-child{
+                display: flex;
+                justify-content: center;
+
+            }
+            .section4{
+                margin-top: 5em;
+            }
+            .section4 img{
+                height: 80vh;
+            }
+            .section4>div:nth-of-type(1)>div:nth-of-type(2) *
+            {
+                margin-top: 0.6em;
+            }
+            .install,.unlimited-features,.Support
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .section4 h6{
+                color:#13c3c9; ;
+            }
+            .section4 p{
+                font-size: 0.7em;
+            }
+            .section4 i{
+                border: 1px solid black;
+                padding: 1em;
+            }
+           section4 h5{
+            border-top: 0;
+            border-bottom: 0;
+           }
+           section4 p{
+            border-bottom: 0;
+            border-top: 0;
+           }
+           .install>div:nth-of-type(2)
+           {
+            margin-top: 0;
+            margin-left: 0.5em;
+           }
+           .unlimited-features>div:nth-of-type(2)
+           {
+            margin-top: 0;
+            margin-left: 0.5em;
+           }
+           .Support>div:nth-of-type(2)
+           {
+            margin-top: 0;
+            margin-left: 0.5em;
+           }
+          
+            
