@@ -15,7 +15,7 @@
     <header>
         <nav>
             <div class="res-container">
-                <ul>
+                <ul class="flex">
                     <li><a href="#">Bailo</a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Feature</a></li>
@@ -29,11 +29,11 @@
             </div>
         </nav>
         <div class="res-container">
-            <div id="home">
-                <div>
+            <div class="flex" id="home">
+                <div  class="home-text">
                     <h1>Best Fashionable Smart Watch Your Daily Life</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                    <button><i class="fa-solid fa-cart-shopping"></i>Buy Now</button>
+                    <a class="home-button" href="#"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a>
                 </div>
                 <img src="imgs/hero-mockup.png" alt="">
             </div>
@@ -43,33 +43,35 @@
     <div class="main">
         <section>
             <div class="res-container">
-                <div>
-                    <img src="imgs/blue.jpg" alt="">
-                    <img src="imgs/pink.jpg" alt="">
-                    <img src="imgs/red.jpg" alt="">                
-                </div>
-                <div>
-                    <h6>Bailo Watch</h6>
-                    <h3>Smart Watch For Easy Life</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div>
-                        <span>Select Color</span>
-                        <label for="red-w-select"><span>*<span></label>
-                        <input type="radio" name="color_select" id="red-w-select">
-                        <label for="blue-w-select"><span>*<span></label>
-                        <input type="radio" name="color_select" id="blue-w-select">
-                        <label for="pink-w-select"><span>*<span></label>
-                        <input type="radio" name="color_select" id="pink-w-select">
+                <div id="clrParent" class="flex">
+                    <div id="clrImg" class="flex">
+                        <img src="imgs/red.jpg" alt="">                
+                        <img src="imgs/blue.jpg" alt="">
+                        <img src="imgs/pink.jpg" alt="">
                     </div>
-                    <div>
-                        <span>
-                            Item Price
-                        </span>
+                    <div id="clrText">
+                        <h6>Bailo Watch</h6>
+                        <h3>Smart Watch For Easy Life</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <div>
-                            <span><del>€40.00</del> €160.00</span>
-                            <span><button>Add To Cart</button></span>
+                            <span>Select Color</span>
+                            <label for="red-w-select"><span>*<span></label>
+                            <input type="radio" name="color_select" id="red-w-select">
+                            <label for="blue-w-select"><span>*<span></label>
+                            <input type="radio" name="color_select" id="blue-w-select">
+                            <label for="pink-w-select"><span>*<span></label>
+                            <input type="radio" name="color_select" id="pink-w-select">
                         </div>
-                        <a href="#"><i class="fa-solid fa-circle-question"></i> How to configurate your Smart Watch</a>
+                        <div>
+                            <span>
+                                Item Price
+                            </span>
+                            <div>
+                                <span><del>€40.00</del> €160.00</span>
+                                <span><button>Add To Cart</button></span>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-circle-question"></i> How to configurate your Smart Watch</a>
+                        </div>
                     </div>
                 </div>
             </div>
