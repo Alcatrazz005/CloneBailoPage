@@ -18,11 +18,15 @@ img{
     height: auto;
 }
 
-/* header, section, div, footer, nav{
+header, section, div, footer, nav{
     border: 1px solid black;
     margin: 4px;
     padding: 3px;
-} */
+}
+
+header, section{
+    padding: 110px 0 ;
+}
 
 .flex{
     display: flex;
@@ -37,7 +41,6 @@ header{
     background-size: cover;
     background-position: center center;
     z-index: 0;
-    padding-bottom: 110px;
     padding-top: 143px;
 }
 
@@ -152,7 +155,7 @@ nav a{
     z-index: 0;
 }
 
-/* select color section */
+/*******************************************************section 1***********************************************************/
 
 #clrParent{
     justify-content: space-between;
@@ -160,6 +163,7 @@ nav a{
 
 #clrImg{
     flex-basis: 48.34%;
+    position: relative;
 }
 
 #clrText{
@@ -168,6 +172,7 @@ nav a{
 
 #clrImg>img:nth-of-type(1){
     width: 100%;
+    position: absolute;
 }
 
 #clrImg>img:not(:nth-of-type(1)){
@@ -182,7 +187,99 @@ nav a{
     margin-bottom: 11.1px;
 }
 #clrText>h3{
-    font-size: 2.26rem;
+    font-size: 2.268rem;
     font-weight: 800;
     line-height: 2.95rem;
+    color: #333333;
 }
+
+#clrText>p{
+    margin: 1.375rem 0 0.6875rem 0;
+    font-weight: 500;
+    letter-spacing: 0.77px;
+    color: #555;
+}
+
+#selectClr{
+    margin-bottom: 2.0625rem;
+}
+
+#selectClr>span{
+    margin-bottom: 1.375rem;
+    display: block;
+    color: #86939E;
+    font-weight: 500;
+}
+
+#selectClr input{
+    display: none;
+}
+
+#selectClr > label > span{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+    margin-right: 0.275rem;
+    cursor: pointer;
+}
+
+#selectClr > label[for="red-w-select"] > span{
+    background-color: #fb4a53;    
+}
+#selectClr > label[for="blue-w-select"] > span{
+    background-color: #39446d;
+}
+#selectClr > label[for="pink-w-select"] > span{
+    background-color: #FFC0CB;
+}
+
+#pricing>span{
+    display: inline-block;
+    color: #86939E;
+    font-weight: 500;
+    margin-bottom: 1.03rem;
+}
+
+#pricing>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.375rem;
+}
+
+#pricing > div span:nth-of-type(1){
+    font-size: 26.4px;
+    font-weight: 800;
+    color: #13c3c9;
+}
+
+#pricing > div span > del{
+    color: #FF9800;
+    margin-right: 0.6875rem;
+}
+
+#pricing > div span:nth-of-type(2) > button{
+    cursor: pointer;
+    border: none;
+    background-color: #13c3c9;
+    color: #fff;
+    padding: 13.2px 33px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15.4px;
+    letter-spacing: 0.77px;
+    line-height: 26.4px;
+}
+
+#pricing > a{
+    color: #358ED7;
+    text-decoration: none;
+    font-size: 13.2px;
+    margin: 11px 0;
+    display: inline-block;
+}
+
+/* **********************************************Section 2************************************************* */
